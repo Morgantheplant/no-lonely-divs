@@ -1,10 +1,10 @@
 # div tags must have an id or className (no-lonely-divs)
 
-This rule aims to discourage using unnamed `<divs>` as containers.
+This rule aims to discourage using `<div>` tags without classes or ids.
 
 ## Rule Details
 
-All divs should have either an id, a className or both
+All divs should have either an id or a className or both.
 
 ```js
 // bad
@@ -26,20 +26,11 @@ Examples of **correct** code for this rule:
 // good
 
 <div className="foo" />
-<div id="bar" />
 
-<div id="cheese" className="potatoes" style={{color:blue}}>Hello</div>
+<div className="bar baz" style={{color:blue}}>Hello</div>
 
-<div className="baz">
+<div id="cheese" className="potatoes">
     <MyComponent/>
 </div>
 
-
-
 ```
-
-
-## When Not To Use It
-
-Would not be ideal to use on an exisitng large codebase. It is recommended to use this per directory.
-

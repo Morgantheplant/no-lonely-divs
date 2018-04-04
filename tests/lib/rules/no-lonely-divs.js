@@ -117,6 +117,14 @@ ruleTester.run('no-lonely-divs', rule, {
                     message: 'All <div/> tags must have a descriptive id, a className or both'
                 }
             ]
+        },
+         {
+            code: '<div data-quantity="1kg" data-vegetable>Tomatoes</div>',
+            errors: [
+                {
+                    message: 'All <div/> tags must have a descriptive id, a className or both'
+                }
+            ]
         }
     ]
 });
