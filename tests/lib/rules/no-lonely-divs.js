@@ -52,7 +52,7 @@ ruleTester.run('no-lonely-divs', rule, {
             code: '<div />',
             errors: [
                 {
-                    message: 'All <div/> tags must have a descriptive id, a className or both'
+                    message: 'All <div/> tags must have an id, a className or both'
                 }
             ]
         },
@@ -60,7 +60,7 @@ ruleTester.run('no-lonely-divs', rule, {
             code: '<div><a href="/blarg" /></div>',
             errors: [
                 {
-                    message: 'All <div/> tags must have a descriptive id, a className or both'
+                    message: 'All <div/> tags must have an id, a className or both'
                 }
             ]
         },
@@ -68,7 +68,7 @@ ruleTester.run('no-lonely-divs', rule, {
             code: '<div id="" className="">Pizza</div>',
             errors: [
                 {
-                    message: 'All <div/> tags must have a descriptive id, a className or both'
+                    message: 'All <div/> tags must have an id, a className or both'
                 }
             ]
         },
@@ -76,7 +76,7 @@ ruleTester.run('no-lonely-divs', rule, {
             code: '<div class="boop"><a href="/blarg" /></div>',
             errors: [
                 {
-                    message: 'All <div/> tags must have a descriptive id, a className or both'
+                    message: 'All <div/> tags must have an id, a className or both'
                 }
             ]
         },
@@ -84,7 +84,7 @@ ruleTester.run('no-lonely-divs', rule, {
             code: '<div style={{color:"blue"}}><ul><li>item</li></ul></div>',
             errors: [
                 {
-                    message: 'All <div/> tags must have a descriptive id, a className or both'
+                    message: 'All <div/> tags must have an id, a className or both'
                 }
             ]
         },
@@ -92,7 +92,7 @@ ruleTester.run('no-lonely-divs', rule, {
             code: '<ul><li><div>text</div></li></ul>',
             errors: [
                 {
-                    message: 'All <div/> tags must have a descriptive id, a className or both'
+                    message: 'All <div/> tags must have an id, a className or both'
                 }
             ]
         },
@@ -100,10 +100,10 @@ ruleTester.run('no-lonely-divs', rule, {
             code: '<div><div></div></div>',
             errors: [
                 {
-                    message: 'All <div/> tags must have a descriptive id, a className or both'
+                    message: 'All <div/> tags must have an id, a className or both'
                 },
                 {
-                    message: 'All <div/> tags must have a descriptive id, a className or both'
+                    message: 'All <div/> tags must have an id, a className or both'
                 }
             ]
         },
@@ -111,10 +111,10 @@ ruleTester.run('no-lonely-divs', rule, {
             code: '<div><li><div>text</div></li></div>',
             errors: [
                 {
-                    message: 'All <div/> tags must have a descriptive id, a className or both'
+                    message: 'All <div/> tags must have an id, a className or both'
                 },
                 {
-                    message: 'All <div/> tags must have a descriptive id, a className or both'
+                    message: 'All <div/> tags must have an id, a className or both'
                 }
             ]
         },
@@ -122,7 +122,7 @@ ruleTester.run('no-lonely-divs', rule, {
             code: '<div data-quantity="1kg" data-vegetable>Tomatoes</div>',
             errors: [
                 {
-                    message: 'All <div/> tags must have a descriptive id, a className or both'
+                    message: 'All <div/> tags must have an id, a className or both'
                 }
             ]
         }
